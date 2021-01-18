@@ -1,0 +1,32 @@
+<div class="upper">
+    <div class="container">
+        <div class="upper__title"> Select type of car </div>
+            
+        <div class="images__info">
+            <div class="container__images">
+               {image_sedan}
+               {image_wagon}
+            </div>
+           
+            <div class="container__text">
+                <form method="POST" action="../../../www/bmacars/inventory.php">
+                    <input class="type__text" type="submit" name="body" value="Sedan">
+                    <input class="type__text left__margin" type="submit" name="body" value="Wagon">
+                </form>
+            </div>
+              
+               
+            <div class="container__images">
+               {image_luxury}
+               {image_suv}
+            </div>
+               
+            <div class="container__text">
+                <form method="POST" action="../../../www/bmacars/inventory.php">
+                    <input class="type__text" type="submit" name="body" value="Luxury">
+                    <input class="type__text left__margin" type="submit" name="body" value="SUV">
+                </form>
+            </div>
+        </div>    
+    </div>
+</div>

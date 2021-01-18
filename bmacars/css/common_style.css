@@ -1,0 +1,150 @@
+body{    
+    margin: 0;
+    line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1150px; 
+    
+    margin: 0 auto;
+}
+
+
+.header{
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: 1000;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.nav{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;
+    margin: 0 5px;
+    
+    color: white;
+    text-decoration: none;
+    border: 1.5px solid white;
+    border-radius: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    
+    transition: color .4s linear;
+}
+
+.nav__link:hover{
+    background: #fffaf0; /*#f8f8ff; /*white;*/
+    color: black;
+}
+
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    transition: opacity 400ms ease-in;
+    display: none;    
+    pointer-events: none;
+}
+
+.modalDialog:target{
+    display: block;
+    pointer-events: auto;
+}
+ 
+.modalDialog > div {
+    width: 185px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover{
+    background: #00d9ff;
+}
+
+.authorization{
+    text-align: center;
+}
+
+.sign__text{
+    width: 173px;
+    height: 20px;
+    margin: 7px 0;
+    padding: 0 5px;
+    border: 1.2px solid black;
+    border-radius: 2px;
+}
+
+.sign__text:focus{
+    background: #00d9ff
+}
+
+.container__submit{
+    text-align: center;
+    margin: 8px 0 0 0;
+}
+
+.sign__sibmit{
+    border-radius: 4px;
+    color: black;
+    height: 30px;
+    width: 185px;
+}
+
+input[type=submit]:hover{
+    background-color: #00d9ff;
+}

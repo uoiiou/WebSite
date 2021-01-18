@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> BMACars </title>
+    <!--                 -->
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/{css_style}.css">
+    <!--                 -->
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="home.php"> BMACars </a>
+               
+                <nav class="nav">
+                    <a class="nav__link" href="home.php"> Home </a>
+                    <!--                 -->
+                    <a class="nav__link{inv_insert}" href="inventory.php"> Inventory </a>
+                    <a class="nav__link{abo_insert}" href="about_us.php"> About Us </a>
+                    <a class="nav__link{con_insert}" href="contacts.php"> Contacts </a>
+                    <a class="nav__link" href="admin.php"> Edit </a>
+                    <!--                 -->
+                    <a class="nav__link" href="#sign_in"> Sing in </a>
+                </nav>
+               
+                <div id="sign_in" class="modalDialog">
+                    <div> 
+                        <a class="close" href="" title="Close">X</a>
+                           
+                        <h3 class="authorization"> Authorization </h3>
+                        <form action="{handler}.php" method="post">
+                            <input class="sign__text" type="text" id="username" placeholder=" Username" name="login">
+                            <input class="sign__text" type="password" placeholder=" Password" name="password">
+                             
+                            <div class="container__submit">
+                                <input type="submit" value="Send" class="sign__sibmit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <!--                 -->
+    <div class="intro">
+        {intro_insert}
+    </div>
+    <!--                 -->
+    
+    {upper_insert}
+    
+    <!--                 -->
+    <div class="middle">
+       <div class="middle__container">
+            {middle_insert}
+       </div>
+   </div>
+   <!--                 -->
+   
+    {footer_insert}
+</body>
+</html>

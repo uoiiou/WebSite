@@ -1,0 +1,257 @@
+.selected{
+    background: #fffaf0;
+    color: black;
+}
+
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/background/audi_bmw_merc.jpg") center no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+
+.middle{
+    height: 1850px;
+    background: url("../images/background/audi_bmw_merc_1.jpg") center no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+.middle__container{
+    width: 100%;
+    max-width: 1150px; 
+    
+    margin: 0 auto;
+}
+
+
+.title_name {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    font-size: 40px;
+    letter-spacing: 0.2em;
+    border-bottom: 2px solid white;    
+}
+
+
+.listofcar {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 410px;
+}
+
+.car {
+    margin-bottom: 60px;
+    box-shadow: 7px 7px 20px rgba(0,0,0,0.6);
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    width: 700px; 
+    height: 200px;
+    background: #008b8b; 
+}
+
+.container_car {
+    display: flex;
+}
+
+.car_info {
+    margin-left: 20px;
+}
+
+.container_header_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+}
+
+.rectangle {
+    width: 100px; 
+    height: 45px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.price {
+    text-align: center;
+    color: #008b8b;
+}
+
+.container_footer_info {
+    display: flex;
+}
+
+.container_values {
+    margin-top: 15px;
+    line-height: 22px;
+    width: 120px;
+    height: 45px;
+    border-right: 2px solid white;
+}
+
+.style_title {
+    margin-left: 14px;
+    width: 92px;
+    height: 10xp;
+    background: white;
+    border-radius: 3px;
+    color: #008b8b;
+    font-size: 12px;
+    text-align: center;
+}
+
+.style_value {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button_add {
+    margin-top: 2px;
+    margin-left: 260px;
+    width: 110px;
+    height: 30px;
+}
+
+.button_text {
+    text-decoration: none;
+    color: black;
+    
+    border: 1px solid black;
+    border-radius: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background: white;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+    
+    transition: color .4s linear;
+}
+
+.button_text:hover {
+    background: black;
+    color: white;
+}
+
+
+.category {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 170px;
+}
+
+.info {
+    width: 170px;
+    height: 50px;
+    text-align: left;
+    border: 0;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Times New Roman, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.search a, .search .info {
+    background: #008b8b;/*#3d3d3d;*/
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid white;/*#666;*/
+    transition: 0.5s all;
+}
+
+.search a:hover, .search .info:hover {
+    background: white;
+    color: #008b8b;
+    padding: 10px 0 10px 20px;
+}
+
+.search li:first-child a, search li:first-child .info, .search li .search_drop li:first-child a, .search li .search_drop li:first-child .info {
+    border-radius: 5px 5px 0 0;
+}
+
+.search li:last-child a, .search li:last-child .info, .search li .search_drop li:last-child a, .search li .search_drop li:last-child .info {
+    border-radius: 0 0 5px 5px;
+    border-bottom: 0;
+}
+
+.search li .search_drop li a,
+.search li .search_drop li .info{
+    border-radius: 0;
+    border-bottom: 1px solid white;
+}
+
+.search_list {
+    position: relative;
+}
+
+.search_drop {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: -9999em;
+    opacity: 0;
+    border-left: 3px solid transparent;
+    transition: 0.5s opacity;
+}
+
+.search_list:hover .search_drop {
+    opacity: 1;
+    top: 0;
+}
+
+.search_list::after {
+    content: " ";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent #eee transparent transparent;
+    top: 1.3em;
+    right: 0.7em;
+    transition: 0.5s;
+}
+
+.search_list:hover::after {
+    transform: scaleX(-1);
+    border-color: transparent #008b8b transparent transparent;
+}
+
+.no_list::after {
+    border: 0;
+}
+
+@media screen and (max-width: 1320px) {
+    .header, .intro, .middle {
+        max-width: 1320px;
+        min-width: 1320px;
+    }
+    
+    .intro{
+        max-height: 627px;
+        min-height: 627px;
+    }
+    
+    .middle{
+        max-height: 1850px;
+        min-height: 1850px;
+    }
+}

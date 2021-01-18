@@ -1,0 +1,190 @@
+.intro{
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/background/03-mercedes-benz-mbsocialcar-s-class-s-500-v-222-calendar-december-2018-3400x1440.jpeg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__title{
+    font-size: 80px;
+    font-weight: bold;
+    max-width: 500px;
+    line-height: 1;
+    text-align: left;
+    color: white;
+    
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 150px;
+}
+
+
+.upper{
+    width: 100%;
+    height: 950px;
+}
+
+.upper__title{
+    font-size: 50px;
+    color: black;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__images{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 50px 150px 0 150px;
+}
+
+.container__text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
+    margin: 0 235px;
+}
+
+.type__text{
+    font-family: Times New Roman, sans-serif;
+    font-size: 40px;
+    line-height: 25px;
+    
+    color: black;
+    background: white;
+    text-decoration: none;
+    
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 15px 15px;
+    
+    transition: 0.4s all;
+}
+
+.left__margin {
+    margin-left: 395px;
+}
+
+.type__text:hover{
+    background: black;
+    color: white;
+}
+
+
+.middle{
+    height: 625px;
+    background: #f8f8ff;
+}
+
+.middle__container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.middle__title{
+    font-size: 45px;
+    font-weight: 600;
+    color: black;
+    
+    line-height: 70px;
+    padding-top: 60px;
+}
+
+.middle__info{
+    font-size: 18px;
+    color: #808080;
+    padding-top: 30px;
+}
+
+.container__aboutus{
+    line-height: 120px;
+}
+
+.button__aboutus{    
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    
+    transition: color 0.3s linear;
+}
+
+.button__aboutus:hover{
+    border: 1.5px solid black;
+    background: #8fbc8f; /*#3cb371; /*#8fbc8f; /*#5f9ea0;*/
+    color: white;
+}
+
+
+.footer{
+    height: 145px;
+    background: #232628; /*#d3d3d3;*/
+}
+
+.footer__titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+    margin: 0 10px;
+    
+    color: white;
+}
+
+.info__title{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.some__info{
+    line-height: 25px;
+}
+
+.date{
+    color: #aaa;
+    font-weight: 700;
+}
+
+.contacts{
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 1320px) {
+    .header, .intro, .upper, .middle, .footer {
+        max-width: 1320px;
+        min-width: 1320px;
+    }
+    
+    .intro{
+        max-height: 627px;
+        min-height: 627px;
+    }
+    
+    .upper{
+        max-height: 950px;
+        min-height: 950px;
+    }
+    
+    .middle{
+        max-height: 625px;
+        min-height: 625px;
+    }
+    
+    .footer{
+        max-height: 145px;
+        min-height: 145px;
+    }
+}
